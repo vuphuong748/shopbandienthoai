@@ -1,0 +1,356 @@
+/* Register */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    background: linear-gradient(135deg, #71b7e6, #9b59b6);
+}
+
+
+.container{
+   max-width: 700px;
+   width: 100%;
+   background: #fff;
+   padding: 25px 30px;
+   border-radius: 5px;
+}
+
+.container .title{
+   text-align: center;
+   font-size: 25px;
+   font-weight: 500;
+   position: relative;
+   color: #9b59b6;
+}
+
+.container form .user-detail{
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+   margin: 20px 0 12px 0;
+   font-size: 16px;
+}
+
+form .user-detail .input_box{
+   margin-bottom: 15px;
+   width: calc(100% / 2 - 20px);
+}
+
+.user-detail .input_box .details{
+   display: block;
+   font-weight: 500;
+   margin-bottom: 5px;
+}
+
+.user-detail .input_box input{
+   height: 45px;
+   width: 100%;
+   outline: none;
+   border-radius: 5px;
+   border: 1px solid #ccc;
+   padding-left: 15px;
+   font-size: 16px;
+   border-bottom-width: 2px;
+   transition: all 0.3s ease;
+}
+
+.gender{
+   font-size: 13px;
+}
+
+.user-detail .input_box input:focus,
+.user-detail .input_box input:valid{
+   border-color: #9b59b6;
+}
+
+form .gender-details .gender-title{
+   font-size: 20px;
+   font-weight: 500;
+}
+
+form .gender-details .category{
+   width: 25%;
+   display: flex;
+   margin: 14px 0;
+   justify-content: space-between;
+}
+
+.gender-details .category label{
+   display: flex;
+   align-items: center;
+}
+
+.gender-details .category .dot{
+   height: 18px;
+   width: 18px;
+   border-radius: 50%;
+   margin-right: 10px;
+   background: #f0eded;
+   border: 5px solid transparent;
+   transition: all 0.3s ease;
+}
+#dot-1:checked ~ .category label .one,
+#dot-2:checked ~ .category label .two{
+   border-color: #f0eded;
+   background: #9b59b6;
+}
+
+form input[type="radio"]{
+   display: none;
+}
+
+form .button{
+   height: 45px;
+   margin: 45px 0;  
+   cursor: pointer;
+}
+
+form .button input{
+   height: 100%;
+   width: 100%;
+   outline: none;
+   color: #fff;
+   border: none;
+   font-size: 18px;
+   font-weight: 500;
+   border-radius: 5px;
+   background: linear-gradient(135deg, #71b7e6, #9b59b6);
+}
+
+form .button input:hover{
+   background: linear-gradient(-135deg, #71b7e6, #9b59b6);
+}
+
+/* Login */
+/* .dn_container{
+   display: flex;
+   height: 100vh;
+   justify-content: center;
+   align-items: center;
+   padding: 10px;
+   background: linear-gradient(135deg, #71b7e6, #9b59b6);
+} */
+
+.dn_center{
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   width: 400px;
+   background: white;
+   border-radius: 10px;
+}
+
+.dn_center h1{
+   text-align: center;
+   padding: 10px 0 20px 0;
+}
+
+.dn_center form{
+   padding: 0 40px;
+   box-sizing: border-box;
+}
+
+form .dn_text-field{
+   position: relative;
+   margin: 30px 0;
+   border-bottom: 2px solid #2691d9;
+}
+
+.dn_text-field input{
+   width: 100%;
+   padding: 0 5px;
+   height: 40px;
+   font-size: 16px;
+   border: none;
+   background: none;
+   outline: none;
+}
+
+.dn_text-field label{
+   position: absolute;
+   top: 50%;
+   left: 5px;
+   color: #adadad;
+   transform: translateY(-50%);
+   font-size: 16px;
+   pointer-events: none;
+   transition: 0.5s;
+}
+
+.dn_text-field span::before{
+   content: "";
+   position: absolute;
+   top: 40px;
+   left: 0;
+   width: 0%;
+   height: 2px;
+   transition: 0.5s;
+}
+
+
+
+.dn_text-field input:focus ~ span::before,
+.dn_text-field input:valid ~ span::before{
+   width: 100%;
+}
+
+.dn_pass{
+   margin: -5px 0 20px 5px;
+   color: #a6a6a6;
+   cursor: pointer;
+}
+
+
+input[type="submit"]{
+   width: 100%;
+   height: 50px;
+   border: 1px solid;
+   background: #2691d9;
+   border-radius: 25px;
+   font-size: 16px;
+   color: #fff;
+   font-weight: 500;
+   cursor: pointer;
+   outline: none;
+}
+
+input[type="submit"]:hover{
+   border-color: #2691d9;
+   transition: 0.5s;
+}
+
+.dn_signup-link{
+   margin: 30px 10px;
+   text-align: center;
+   font-size: 14px;
+   color: #666;
+}
+
+.dn_signup-link a{
+   color: #2691d9;
+   text-decoration: none;
+}
+
+
+
+
+
+
+
+.ad_container{
+   display: flex;
+   height: 100vh;
+   justify-content: center;
+   align-items: center;
+   padding: 10px;
+   background: linear-gradient(135deg, #71b7e6, #9b59b6);
+}
+
+.ad_center{
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   width: 400px;
+   background: white;
+   border-radius: 10px;
+}
+
+.ad_center h1{
+   text-align: center;
+   padding: 10px 0 20px 0;
+}
+
+.ad_center form{
+   padding: 0 40px;
+   box-sizing: border-box;
+}
+
+form .ad_text-field{
+   position: relative;
+   margin: 30px 0;
+   border-bottom: 2px solid #2691d9;
+}
+
+.ad_text-field input{
+   width: 100%;
+   padding: 0 5px;
+   height: 40px;
+   font-size: 16px;
+   border: none;
+   background: none;
+   outline: none;
+}
+
+.ad_text-field label{
+   position: absolute;
+   top: 50%;
+   left: 5px;
+   color: #adadad;
+   transform: translateY(-50%);
+   font-size: 16px;
+   pointer-events: none;
+   transition: 0.5s;
+}
+
+.ad_text-field span::before{
+   content: "";
+   position: absolute;
+   top: 40px;
+   left: 0;
+   width: 0%;
+   height: 2px;
+   transition: 0.5s;
+}
+
+.ad_text-field input:focus ~ label,
+.ad_text-field input:valid ~ label{
+   top: -1px;
+   color: #2691d9;
+}
+
+.ad_text-field input:focus ~ span::before,
+.ad_text-field input:valid ~ span::before{
+   width: 100%;
+}
+
+.ad_pass{
+   margin: -5px 0 20px 5px;
+   color: #a6a6a6;
+   cursor: pointer;
+}
+
+.ad_pass:hover{
+   text-decoration: underline;
+}
+
+input[type="submit"]{
+   width: 100%;
+   height: 50px;
+   border: 1px solid;
+   background: #2691d9;
+   border-radius: 25px;
+   font-size: 16px;
+   color: #fff;
+   font-weight: 500;
+   cursor: pointer;
+   outline: none;
+   margin-bottom: 10px;
+}
+
+input[type="submit"]:hover{
+   border-color: #2691d9;
+   transition: 0.5s;
+}
+
+
